@@ -163,7 +163,7 @@ resource "azurerm_storage_account" "storageaccount1" {
 There are various types of blocks in Terraform. 
 Now, let's explore the individual blocks.  
 
-  
+<br>  
    
 ## 5. Block Types in Terraform   
   <br>
