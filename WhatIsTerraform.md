@@ -130,7 +130,9 @@ All blocks in Terraform follow a general pattern:
 - Defines the properties and configurations for the resource.
 - Each attribute is assigned a value that determines the resource's configuration.
 - Examples:
-  name = "mystorageaccount"
-  location = "East US"
-  account_tier = "Standard"
+  `
+  name = "mystorageaccount"  
+  location = "East US"  
+  account_tier = "Standard"  
   account_replication_type = "LRS"
+  `
