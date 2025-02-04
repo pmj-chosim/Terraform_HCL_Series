@@ -72,7 +72,7 @@ Terraform then automatically manages resource states and applies necessary chang
 Additionally, HCL is **block-based**, making it easy to structure and organize infrastructure definitions.  
 
 > ## What is a block?  
-> Think of **blocks** in HCL like **building blocks in LEGO**. Each block serves a specific function, and by stacking different blocks together, you can build a complete infrastructure—just like assembling LEGO  > pieces to create a structure.  
+> Think of **blocks** in HCL like **building blocks in LEGO**. Each block serves a specific function, and by stacking different blocks together, you can build a complete infrastructure—just like assembling LEGO pieces to create a structure.  
 > 
 > Each block consists of a **type** (e.g., `resource`, `provider`) and a **configuration** that defines its details.  
 >
