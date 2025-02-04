@@ -177,8 +177,8 @@ provider "azurerm" {
   features {}
 }
 ```
-- Block Type: provider
-- Resource Type: azurerm (Azure Resource Manager provider)
+- Block Type: `provider`
+- Resource Type: `azurerm` (Azure Resource Manager provider)
 - Resource Name: Not typically required, as the provider block applies globally.
   
 ***Explanation:***   
