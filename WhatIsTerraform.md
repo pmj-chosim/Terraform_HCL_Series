@@ -56,7 +56,7 @@ You must understand **HCL (HashiCorp Configuration Language)**.
 
 ## 3. What is HCL?  
 
-HCL is the primary language of Terraform, enabling you to define and manage infrastructure using declarative syntax.  
+HCL is the primary language of Terraform, enabling you to define and manage infrastructure using **declarative syntax**.  
 
 > ### What is declarative syntax?  
 > Declarative syntax allows you to describe the desired state of infrastructure rather than specifying step-by-step procedures to create it.  
