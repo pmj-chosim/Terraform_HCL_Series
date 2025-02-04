@@ -125,3 +125,12 @@ All blocks in Terraform follow a general pattern:
 - provides a unique name or identifier for the resource within the configuration.
 - This helps in referring to the resource elsewhere in the configuration.
 - Example: `"example"` in `azurerm_storage_account "example"`.
+
+(4) Attributes & Values
+- Defines the properties and configurations for the resource.
+- Each attribute is assigned a value that determines the resource's configuration.
+- Examples:
+  name = "mystorageaccount"
+  location = "East US"
+  account_tier = "Standard"
+  account_replication_type = "LRS"
