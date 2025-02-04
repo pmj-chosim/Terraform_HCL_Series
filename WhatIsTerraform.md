@@ -96,7 +96,7 @@ These features make HCL flexible and reusable, helping developers efficiently ma
 
 <br> 
 
-The following content introduces the essential **blocks** to know when provisioning an Azure environment using Terraform. 
+The following content introduces the essential **blocks** to know when provisioning an Azure environment using Terraform.   
 Each block plays a crucial role in Terraform configurations, and understanding them helps in using Terraform more effectively.   
 
 Future posts will cover each block in more detail, providing additional insights as part of a series.
