@@ -179,5 +179,6 @@ provider "azurerm" {
   
 ***Explanation:***   
 > - The Provider Block typically includes settings like authentication details (API keys, credentials, etc.), region, and other provider-specific configurations.  
-> - Provider Initialization: You should run `terraform init` before terraform apply to initialize the provider and download the necessary plugins.  
+> - Provider Initialization: You should run `terraform init` before terraform apply to initialize the provider and download the necessary plugins.
+> - `terraform init` command would be explained in next post.
 
