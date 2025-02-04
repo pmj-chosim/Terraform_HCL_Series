@@ -19,10 +19,10 @@ Here’s the table of contents for this post.
   
 ### Table of Contents  
 [1. What is Terraform?](#1-what-is-terraform)  
-[2. Advantages of Using Terraform](#advantages-of-using-terraform)  
-[3. What is HCL?](#what-is-hcl)  
-[4. Common Structure of Terraform Blocks](#common-structure-of-terraform-blocks)  
-[5. Block Types in Terraform](#block-types-in-terraform)
+[2. Advantages of Using Terraform](#2-advantages-of-using-terraform)  
+[3. What is HCL?](#3-what-is-hcl)  
+[4. Common Structure of Terraform Blocks](#4-common-structure-of-terraform-blocks)  
+[5. Block Types in Terraform](#5-block-types-in-terraform)
 
 ***
 
