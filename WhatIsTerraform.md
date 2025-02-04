@@ -220,6 +220,15 @@ variable "region" {
  <br> <br>  
 
 ### (4) Output Block
+An Output Block is used to display information after Terraform completes the execution, such as resource IDs or IP addresses. It helps in exposing specific values that may be required for external systems or as input for other modules.
+```hcl
+output "storage_account_name" {
+  value = azurerm_storage_account.example.name
+}
+```
+- Block Type: `output`
+- Resource Name: `storage_account_name`
+- Attributes: `value`
 
 
 
