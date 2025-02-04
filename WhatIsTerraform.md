@@ -90,7 +90,7 @@ Despite its differences, HCL shares some common programming concepts, such as:
 
 <br>
 These features make HCL flexible and reusable, helping developers efficiently manage infrastructure as code.  
-<br>
+<br> <br>  
 
 ***
   
