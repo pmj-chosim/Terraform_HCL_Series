@@ -243,6 +243,13 @@ Instead, you create the function once, and then you can use (call) it whenever y
   
 Similarly, in Terraform, you create a module to define a set of resources (like a network, a database, etc.) once. Then, instead of writing the same configuration again in different places, you simply call the module whenever you need it.
  ```hcl
+module "network_us" {
+  source              = "./modules/network"
+  location            = "East US"
+  address_space       = ["10.0.0.0/16"]
+  resource_group_name = "rg-us"
+  subnet_address_prefixes = ["10.0.1.0/24"]
+}
 ```
 
  
