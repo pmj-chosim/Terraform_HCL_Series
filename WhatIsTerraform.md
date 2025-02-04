@@ -182,6 +182,8 @@ Now, let's explore the individual blocks.
   
 ### (1) Provider Block 
 A **Provider Block** is where you configure the services or tools that Terraform will use to manage resources. For example, when managing cloud services, you can use providers like AWS, Azure, or GCP. In addition to cloud services, you can also manage other services like DNS providers, CI/CD tools, virtualization platforms, and more. 
+  
+Since resources will be provisioned in Azure throughout this series, the provider will be set to Azure, configuring the provider block to interact specifically with Azure's services.
 ```hcl
 provider "azurerm" {
   features {}
