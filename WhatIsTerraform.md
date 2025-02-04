@@ -117,16 +117,16 @@ All blocks in Terraform follow a general pattern:
 - Defines the role of the block.
 - Examples: `resource`, `provider`, `variable`, etc.
   
-(2) Resource Type  
+(2) **Resource Type**  
 - Specifies the type of resource being defined.
 - Examples: `azurerm_storage_account`, `aws_s3_bucket`, `google_compute_instance`, etc.
   
-(3) Resource Name (Local Identifier)  
+(3) **Resource Name (Local Identifier)**  
 - provides a unique name or identifier for the resource within the configuration.
 - This helps in referring to the resource elsewhere in the configuration.
 - Example: `"example"` in `azurerm_storage_account "example"`.
 
-(4) Attributes & Values
+(4) **Attributes & Values**
 - Defines the properties and configurations for the resource.
 - Each attribute is assigned a value that determines the resource's configuration.
 - Examples:
