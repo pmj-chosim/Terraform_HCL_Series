@@ -105,7 +105,7 @@ Future posts will cover each block in more detail, providing additional insights
   
 ## 4. Common Structure of Terraform Blocks    
   
-All blocks in Terraform follow a general pattern:    
+All blocks in Terraform typically follow a general pattern(not all situation):    
 
 ```hcl
 <Block Type> <Resource Type> <Resource Name> {
