@@ -31,7 +31,7 @@ Let’s dive into Terraform and explore the topics step by step.
 ***
 <br>
 
-## What is Terraform?
+## 1. What is Terraform?
 
 Terraform is a tool for managing infrastructure as code (IaC: Infrastructure as Code).  
 By using Terraform, you can define and automate the deployment, updates, and versioning of infrastructure as code.  
