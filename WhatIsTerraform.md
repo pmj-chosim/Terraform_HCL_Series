@@ -205,7 +205,7 @@ resource "azurerm_storage_account" "example1" {
  <br> <br>  
 
 ### (3) Variable Block
-A Variable Block defines variables that can be used throughout the configuration. Variables allow for dynamic configurations, as they can be set at runtime or passed via the command line.  
+A **Variable Block** defines variables that can be used throughout the configuration. Variables allow for dynamic configurations, as they can be set at runtime or passed via the command line.  
 ```hcl
 variable "region" {
   description = "The region where resources will be created"
@@ -217,9 +217,25 @@ variable "region" {
 - Resource Name: `region`
 - Attributes: `description`, `type`, `default`
 
- <br> <br>  
+ <br> <br> 
+ 
+### (3) Data Block
+A **Data Block** is used to query data that already exists outside of your Terraform configuration. It can fetch existing resources (e.g., images, networks) and use them to configure new resources.
+```hcl
+data "azurerm_virtual_network" "example" {
+  name                = "myvnet"
+  resource_group_name = "my-resource-group"
+}
+```
+- Block Type: data
+- Resource Type: azurerm_virtual_network
+- Resource Name: example
 
-### (4) Output Block
+
+
+ 
+ <br> <br>  
+### () Output Block
 An Output Block is used to display information after Terraform completes the execution, such as resource IDs or IP addresses. It helps in exposing specific values that may be required for external systems or as input for other modules.
 ```hcl
 output "storage_account_name" {
