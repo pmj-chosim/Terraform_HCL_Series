@@ -220,7 +220,7 @@ variable "region" {
 
  <br> <br> 
  
-### (3) Data Block
+### (4) Data Block
 A **Data Block** is used to query data that already exists outside of your Terraform configuration. It can fetch existing resources (e.g., images, networks) and use them to configure new resources.
 ```hcl
 data "azurerm_virtual_network" "ex" {
@@ -232,11 +232,17 @@ data "azurerm_virtual_network" "ex" {
 - Resource Type: `azurerm_virtual_network`
 - Resource Name: `ex`
 
-
+ <br> <br>  
+ 
+### (5) Module Block
+ A Module Block is used to include reusable configurations from other Terraform modules. Modules help organize and encapsulate your configurations, making them easier to manage and share.
+ ```hcl
+```
 
  
  <br> <br>  
-### () Output Block
+ 
+### (6) Output Block
 An Output Block is used to display information after Terraform completes the execution, such as resource IDs or IP addresses. It helps in exposing specific values that may be required for external systems or as input for other modules.
 ```hcl
 output "storage_account_name" {
