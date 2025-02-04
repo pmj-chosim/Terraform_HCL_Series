@@ -27,6 +27,6 @@ As you can see from the table of contents,
 
 <br> <br>
 Let’s dive into Terraform and explore the topics step by step.    
-<br> <br>
+<br>
 ***
 
