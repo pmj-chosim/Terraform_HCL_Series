@@ -206,6 +206,20 @@ resource "azurerm_storage_account" "example1" {
 
 ### (3) Variable Block
 A Variable Block defines variables that can be used throughout the configuration. Variables allow for dynamic configurations, as they can be set at runtime or passed via the command line.  
+```hcl
+variable "region" {
+  description = "The region where resources will be created"
+  type        = string
+  default     = "East US"
+}
+```
+- Block Type: `variable`
+- Resource Name: `region`
+- Attributes: `description`, `type`, `default`
+
+ <br> <br>  
+
+### (4) Output Block
 
 
 
