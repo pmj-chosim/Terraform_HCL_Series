@@ -165,8 +165,8 @@ Now, let's explore the individual blocks.
 
   
    
-## 5. Block Types in Terraform  
-
+## 5. Block Types in Terraform   
+  
 ### (1) Provider Block 
 A Provider Block defines the configuration for the cloud environment or service that Terraform will use to manage resources.   
 For example, you can use the Azure provider to manage Azure resources.  
