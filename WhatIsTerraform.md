@@ -18,11 +18,11 @@ The goal of this series is to help you **build foundational skills for provision
 Here’s the table of contents for this post.  
   
 ### Table of Contents  
-[1. What is Terraform?]()
-[2. Advantages of Using Terraform]
-[3. What is HCL?]
-[4. Common Structure of Terraform Blocks]
-[5. Block Types in Terraform]  
+[1. What is Terraform?](#1-what-is-terraform)  
+[2. Advantages of Using Terraform](#advantages-of-using-terraform)  
+[3. What is HCL?](#what-is-hcl)  
+[4. Common Structure of Terraform Blocks](#common-structure-of-terraform-blocks)  
+[5. Block Types in Terraform](#block-types-in-terraform)
 
 ***
 
