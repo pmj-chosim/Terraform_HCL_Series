@@ -150,7 +150,7 @@ resource "azurerm_storage_account" "storageaccount1" {
 > - Resource Type: azurerm_storage_account
 > - Resource Name: storageaccount1
 > - Attributes:
-> - name = "mystorageaccount" <br>
+>  name = "mystorageaccount" <br>
 >  location = "East US" <br>
 >  account_tier = "Standard" <br>
 >  account_replication_type = "LRS"
