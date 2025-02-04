@@ -169,7 +169,7 @@ Now, let's explore the individual blocks.
   <br>
   
 ### (1) Provider Block 
-A Provider Block defines the configuration for the cloud environment or service that Terraform will use to manage resources.   
+A **Provider Block** defines the configuration for the cloud environment or service that Terraform will use to manage resources.   
 For example, you can use the Azure provider to manage Azure resources.  
 ```hcl
 provider "azurerm" {
@@ -188,7 +188,7 @@ provider "azurerm" {
  <br> <br>  
    
 ### (2) Resource Block  
-A Resource Block is used to define and manage infrastructure resources such as virtual machines, storage accounts, and networks.  
+A **Resource Block** is used to define and manage infrastructure resources such as virtual machines, storage accounts, and networks.  
 ```hcl
 resource "azurerm_storage_account" "example1" {
   name                     = "mystorageaccount"
@@ -201,4 +201,12 @@ resource "azurerm_storage_account" "example1" {
 - Block Type: `resource`
 - Resource Type: `azurerm_storage_account`
 - Resource Name: `example1`
+  
+ <br> <br>  
+
+### (3) Variable Block
+A Variable Block defines variables that can be used throughout the configuration.  
+Variables allow for dynamic configurations, as they can be set at runtime or passed via the command line.  
+
+
 
