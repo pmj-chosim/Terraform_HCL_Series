@@ -29,4 +29,13 @@ As you can see from the table of contents,
 Let’s dive into Terraform and explore the topics step by step.    
 <br>
 ***
+<br>
+## What is Terraform?
+
+Terraform is a tool for managing infrastructure as code (IaC: Infrastructure as Code).  
+By using Terraform, you can define and automate the deployment, updates, and versioning of infrastructure as code.  
+Additionally, it offers the advantage of managing resources consistently across various cloud service providers (such as AWS, Azure, Google Cloud, etc.).
+
+Terraform enables infrastructure to be codified, making it reproducible, version-controlled, and facilitating efficient collaboration. Furthermore, software development processes, such as code reviews, can be applied to infrastructure management as well.
+
 
