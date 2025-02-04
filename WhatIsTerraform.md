@@ -22,11 +22,10 @@ Here’s the table of contents.
 
 <br> <br>    
 As you can see from the table of contents, in this post,     
-### we’ll be covering the essential things you need to know in order to use Terraform to provision services on Azure.    
+### This post covers the essential things you need to know in order to use Terraform to provision services on Azure.    
 
 <br> <br>
 Let’s dive into Terraform and explore the topics step by step.    
 <br> <br>
-  
 ***
 
