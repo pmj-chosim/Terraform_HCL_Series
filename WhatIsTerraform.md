@@ -154,4 +154,22 @@ resource "azurerm_storage_account" "storageaccount1" {
 >  location = "East US" <br>
 >  account_tier = "Standard" <br>
 >  account_replication_type = "LRS"
+
+    <br>
     
+***
+There are various types of blocks in Terraform. 
+Now, let's explore the individual blocks.  
+
+## 5. Block Types in Terraform  
+
+### (1) Provider Block 
+A Provider Block defines the configuration for the cloud environment or service that Terraform will use to manage resources.   
+For example, you can use the Azure provider to manage Azure resources.  
+```hcl
+provider "azurerm" {
+  features {}
+}
+```
+
+
