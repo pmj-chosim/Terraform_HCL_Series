@@ -212,6 +212,12 @@ resource "azurerm_storage_account" "example1" {
 - Block Type: `resource`
 - Resource Type: `azurerm_storage_account`
 - Resource Name: `example1`
+
+
+***Explanation***:
+  > The resource type differs depending on the Cloud Service Provider (CSP) and must be found in the provider's documentation.
+  > For example, in Azure, the resource type for a storage account is azurerm_storage_account, but the name will be different in AWS or GCP.
+  > Terraform uses the exact naming conventions defined by the provider, so it is crucial to reference the correct resource type according to the CSP you are using.
   
  <br> <br>  
 
