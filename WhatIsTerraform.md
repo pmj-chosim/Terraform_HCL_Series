@@ -51,24 +51,32 @@ For example:
 - **Automation**: It reduces the hassle of manually creating and updating resources. Terraform automatically tracks and manages all changes.  
 
 ***
+
+  
 To provision infrastructure on Azure using Terraform, there is one essential thing you need to learn:  
+  
 You must understand **HCL (HashiCorp Configuration Language)**.
 
+  
 ## 3. What is HCL?  
 
 HCL (HashiCorp Configuration Language) is the primary language of Terraform, allowing you to define and manage infrastructure using **declarative syntax**.  
 
+  
 ### - Why use HCL?  
 With HCL, you can automatically provision Azure resources without using the UI. Instead of manually configuring each resource, you define the desired state in code, and Terraform ensures that the infrastructure matches your configuration.  
 
+  
 ### - How is HCL different from other programming languages?  
   
 (1) **Declarative**  
+  
 While HCL is classified as a programming language, it differs from traditional languages like Python or Java.  
 The key distinction is this HCL is **declarative**. Instead of writing step-by-step instructions on *how* to create resources, you describe *what* the final infrastructure should look like.  
 Terraform then automatically manages resource states and applies necessary changes to match the desired configuration.   
 
 (2) **Block-Based**  
+  
 Additionally, HCL is **block-based**, making it easy to structure and organize infrastructure definitions.  
 
 > ## What is a block?  
@@ -82,12 +90,15 @@ Additionally, HCL is **block-based**, making it easy to structure and organize i
 
 <br>
   
+  
 ### - Similarities with other programming languages  
+  
 Despite its differences, HCL shares some common programming concepts, such as:  
 - **Conditional statements** (if-else logic)  
 - **Loops** (iteration over lists or maps)  
 - **Variables** for dynamic configuration  
 
+  
 <br>
 These features make HCL flexible and reusable, helping developers efficiently manage infrastructure as code.  
 <br> <br>  
