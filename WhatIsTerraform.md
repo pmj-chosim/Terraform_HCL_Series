@@ -102,3 +102,13 @@ Each block plays a crucial role in Terraform configurations, and understanding t
 Future posts will cover each block in more detail, providing additional insights as part of a series.  
   
 ***
+  
+## 4. Common Structure of Terraform Blocks    
+  
+All blocks in Terraform follow a general pattern:    
+
+```hcl
+<Block Type> "<Label 1>" "<Label 2>" {
+  <Attribute> = <Value>
+}
+```
