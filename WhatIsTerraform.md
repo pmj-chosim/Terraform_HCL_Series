@@ -71,12 +71,14 @@ Terraform then automatically manages resource states and applies necessary chang
 (2) **Block-Based**  
 Additionally, HCL is **block-based**, making it easy to structure and organize infrastructure definitions.  
 
-> ###  What is a block?  
-> In HCL, a **block** is a fundamental unit of configuration. Each block serves a specific purpose, and multiple blocks can be combined to define the overall infrastructure.  
+> ## What is a block?  
+> Think of **blocks** in HCL like **building blocks in LEGO**. Each block serves a specific function, and by stacking different blocks together, you can build a complete infrastructure—just like assembling LEGO  > pieces to create a structure.  
 > 
+> Each block consists of a **type** (e.g., `resource`, `provider`) and a **configuration** that defines its details.  
+>
 > For example:  
-> - A **resource** block defines an individual infrastructure resource.  
-> - A **provider** block sets up the connection to a cloud environment.  
+> - A **resource** block is like an individual LEGO piece that represents a cloud resource (e.g., a virtual machine, database, or storage account).  
+> - A **provider** block is like the foundation that connects Terraform to a specific cloud service (e.g., Azure, AWS).   
 
 ### - Similarities with other programming languages  
 Despite its differences, HCL shares some common programming concepts, such as:  
