@@ -235,7 +235,6 @@ data "azurerm_virtual_network" "ex" {
  <br> <br>  
  
 ### (5) Module Block
-A Module Block is used to include reusable configurations from other Terraform modules.
 
  Think of a Module Block like a function in programming.
 
