@@ -123,6 +123,7 @@ Blocks in Terraform typically follow a general pattern:
 - Examples: `azurerm_storage_account`, `aws_s3_bucket`, `google_compute_instance`, etc.
   
 (3) **Resource Name (Local Identifier)**  
+- Name it as you want to name!
 - provides a unique name or identifier for the resource within the configuration.
 - This helps in referring to the resource elsewhere in the configuration.
 - Example: `"example"` in `azurerm_storage_account "example"`.
