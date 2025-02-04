@@ -71,7 +71,7 @@ Terraform then automatically manages resource states and applies necessary chang
 (2) **Block-Based**  
 Additionally, HCL is **block-based**, making it easy to structure and organize infrastructure definitions.  
 
-> ### - What is a block?  
+> ###  What is a block?  
 > In HCL, a **block** is a fundamental unit of configuration. Each block serves a specific purpose, and multiple blocks can be combined to define the overall infrastructure.  
 > 
 > For example:  
