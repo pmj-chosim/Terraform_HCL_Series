@@ -184,8 +184,8 @@ provider "azurerm" {
 > - The Provider Block typically includes settings like authentication details (API keys, credentials, etc.), region, and other provider-specific configurations.  
 > - Provider Initialization: You should run `terraform init` before terraform apply to initialize the provider and download the necessary plugins.
 > - `terraform init` command would be explained in next post.
-  <br> <br>
-  
+ 
+ <br> <br>  
    
 ### (2) Resource Block  
 A Resource Block is used to define and manage infrastructure resources such as virtual machines, storage accounts, and networks.  
