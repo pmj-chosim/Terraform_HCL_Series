@@ -6,11 +6,12 @@ This post will introduce you to **Terraform**.
 
 Thanks to *Terraform*, I no longer worry about such issues. With *Terraform*, you can manage your resources as code, which allows you to automatically clean up unnecessary resources.  
 
-
+<br> <br>
   
 This blog post is part of a series, and more content will follow in the future.  
 The goal of this series is to help you **build foundational skills for provisioning Azure services using Terraform**.  
 
+<br> <br>
   
 Here’s the table of contents.  
   
