@@ -112,3 +112,7 @@ All blocks in Terraform follow a general pattern:
   <Attribute> = <Value>
 }
 ```
+
+(1) **Block Type**
+- Defines the role of the block.
+- Examples: `resource`, `provider`, `variable`, etc.
