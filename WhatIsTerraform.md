@@ -39,4 +39,16 @@ Additionally, it offers the advantage of managing resources consistently across 
 
 ***Terraform*** enables infrastructure to be codified, making it reproducible, version-controlled, and facilitating efficient collaboration. Furthermore, software development processes, such as code reviews, can be applied to infrastructure management as well.
 
+***
+  
+## 2. Advantages of Using Terraform  
 
+Using Terraform instead of creating Azure infrastructure via the UI offers several benefits.  
+
+For example:  
+
+- **Consistency**: When configuring resources manually via the UI, mistakes can occur. With Terraform, you can repeatedly deploy the same configuration defined in code, preventing misconfigurations or omissions.  
+- **Version Control**: Terraform code can be stored in a version control system like Git. This allows you to track changes and collaborate with team members efficiently.  
+- **Automation**: It reduces the hassle of manually creating and updating resources. Terraform automatically tracks and manages all changes.  
+
+***
