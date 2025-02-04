@@ -146,12 +146,12 @@ resource "azurerm_storage_account" "example" {
   account_replication_type = "LRS"
 }
 ```
-- Block Type: resource
-- Resource Type: azurerm_storage_account
-- Resource Name: example
-- Attributes:
-- name = "mystorageaccount" <br>
-  location = "East US" <br>
-  account_tier = "Standard" <br>
-  account_replication_type = "LRS"
+> - Block Type: resource
+> - Resource Type: azurerm_storage_account
+> - Resource Name: example
+> - Attributes:
+> - name = "mystorageaccount" <br>
+>  location = "East US" <br>
+>  account_tier = "Standard" <br>
+>  account_replication_type = "LRS"
     
