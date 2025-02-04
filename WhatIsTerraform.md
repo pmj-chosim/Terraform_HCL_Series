@@ -108,7 +108,7 @@ Future posts will cover each block in more detail, providing additional insights
 All blocks in Terraform follow a general pattern:    
 
 ```hcl
-<Block Type> "<Resource Type>" "<Resource Name>" {
+<Block Type> <Resource Type> <Resource Name> {
   <Attribute> = <Value>
 }
 ```
