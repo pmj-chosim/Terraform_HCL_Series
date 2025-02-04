@@ -51,3 +51,16 @@ For example:
 - **Automation**: It reduces the hassle of manually creating and updating resources. Terraform automatically tracks and manages all changes.  
 
 ***
+To provision infrastructure on Azure using Terraform, there is one essential thing you need to learn:  
+You must understand **HCL (HashiCorp Configuration Language)**.
+
+## 3. What is HCL?  
+
+HCL is the primary language of Terraform, enabling you to define and manage infrastructure using declarative syntax.  
+
+### What is declarative syntax?  
+Declarative syntax allows you to describe the desired state of infrastructure rather than specifying step-by-step procedures to create it.  
+
+Additionally, HCL plays a crucial role in managing infrastructure as code, making the process more efficient and maintainable.  
+
+***
