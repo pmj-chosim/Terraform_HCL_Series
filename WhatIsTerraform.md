@@ -205,8 +205,7 @@ resource "azurerm_storage_account" "example1" {
  <br> <br>  
 
 ### (3) Variable Block
-A Variable Block defines variables that can be used throughout the configuration.  
-Variables allow for dynamic configurations, as they can be set at runtime or passed via the command line.  
+A Variable Block defines variables that can be used throughout the configuration. Variables allow for dynamic configurations, as they can be set at runtime or passed via the command line.  
 
 
 
