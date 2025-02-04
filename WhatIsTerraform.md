@@ -4,7 +4,7 @@ This post will introduce you to ***Terraform***.
 
 ### *Have you ever experienced a situation where you forgot to delete a cloud resource, and as a result, you were charged a hefty fee?* 
 
-Thanks to *Terraform*, I no longer worry about such issues. With *Terraform*, you can manage your resources as code, which allows you to automatically clean up unnecessary resources.  
+Thanks to ***Terraform***, I no longer worry about such issues. With ***Terraform***, you can manage your resources as code, which allows you to automatically clean up unnecessary resources.  
 
 <br> <br>
   
