@@ -61,7 +61,7 @@ HCL (HashiCorp Configuration Language) is the primary language of Terraform, all
 ### Why use HCL?  
 With HCL, you can automatically provision Azure resources without using the UI. Instead of manually configuring each resource, you define the desired state in code, and Terraform ensures that the infrastructure matches your configuration.  
 
-### How is HCL different from other programming languages?  
+### - How is HCL different from other programming languages?  
   
 (1) **Declarative**  
 While HCL is classified as a programming language, it differs from traditional languages like Python or Java.  
@@ -71,14 +71,14 @@ Terraform then automatically manages resource states and applies necessary chang
 (2) **Block-Based**  
 Additionally, HCL is **block-based**, making it easy to structure and organize infrastructure definitions.  
 
-### What is a block?  
+### - What is a block?  
 In HCL, a **block** is a fundamental unit of configuration. Each block serves a specific purpose, and multiple blocks can be combined to define the overall infrastructure.  
 
 For example:  
 - A **resource** block defines an individual infrastructure resource.  
 - A **provider** block sets up the connection to a cloud environment.  
 
-### Similarities with other programming languages  
+### - Similarities with other programming languages  
 Despite its differences, HCL shares some common programming concepts, such as:  
 - **Conditional statements** (if-else logic)  
 - **Loops** (iteration over lists or maps)  
