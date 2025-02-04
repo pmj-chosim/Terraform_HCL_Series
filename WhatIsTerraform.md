@@ -11,14 +11,20 @@ Thanks to ***Terraform***, I no longer worry about such issues. With ***Terrafor
 This blog post is part of a series, and more content will follow in the future.  
 The goal of this series is to help you **build foundational skills for provisioning Azure services using Terraform**.  
 
-<br> 
+<br>  
+
+***
   
-Here’s the table of contents.  
+Here’s the table of contents for this post.  
   
 ### Table of Contents  
-~~
-  
+[1. What is Terraform?]()
+[2. Advantages of Using Terraform]
+[3. What is HCL?]
+[4. Common Structure of Terraform Blocks]
+[5. Block Types in Terraform]  
 
+***
 
 <br> <br>    
 As you can see from the table of contents,
