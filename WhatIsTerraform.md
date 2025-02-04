@@ -239,8 +239,9 @@ A Module Block is used to include reusable configurations from other Terraform m
 
  Think of a Module Block like a function in programming.
 
-- When you write a function, you don't have to rewrite the same code every time you want to perform a specific task. Instead, you create the function once, and then you can use (call) it whenever you need.
-- Similarly, in Terraform, you create a module to define a set of resources (like a network, a database, etc.) once. Then, instead of writing the same configuration again in different places, you simply call the module whenever you need it.
+When you write a function, you don't have to rewrite the same code every time you want to perform a specific task. 
+Instead, you create the function once, and then you can use (call) it whenever you need.  
+Similarly, in Terraform, you create a module to define a set of resources (like a network, a database, etc.) once. Then, instead of writing the same configuration again in different places, you simply call the module whenever you need it.
  ```hcl
 ```
 
