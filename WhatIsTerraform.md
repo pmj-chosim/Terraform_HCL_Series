@@ -108,7 +108,7 @@ Future posts will cover each block in more detail, providing additional insights
 All blocks in Terraform follow a general pattern:    
 
 ```hcl
-<Block Type> "<Label 1>" "<Label 2>" {
+<Block Type> "<Resource Type>" "<Resource Name>" {
   <Attribute> = <Value>
 }
 ```
@@ -116,3 +116,12 @@ All blocks in Terraform follow a general pattern:
 (1) **Block Type**
 - Defines the role of the block.
 - Examples: `resource`, `provider`, `variable`, etc.
+  
+(2) Resource Type  
+- Specifies the type of resource being defined.
+- Examples: `azurerm_storage_account`, `aws_s3_bucket`, `google_compute_instance`, etc.
+  
+(3) Resource Name (Local Identifier)  
+- provides a unique name or identifier for the resource within the configuration.
+- This helps in referring to the resource elsewhere in the configuration.
+- Example: `"example"` in `azurerm_storage_account "example"`.
