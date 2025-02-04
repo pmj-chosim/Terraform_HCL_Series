@@ -266,7 +266,7 @@ output "vm_ip" {
 - Resource Name: `vm_ip`
 - Attributes: `value`
 
-***Explanation:
+***Explanation:***
 > In this example, output `"vm_ip"` will display the IP address of the virtual machine after Terraform finishes its execution. This value can then be used by other modules or systems.
 
 
