@@ -206,7 +206,7 @@ resource "azurerm_storage_account" "example1" {
  <br> <br>  
 
 ### (3) Variable Block
-A **Variable Block** defines variables that can be used throughout the configuration. Variables allow for dynamic configurations, as they can be set at runtime or passed via the command line.  
+A **Variable Block** is used to define variables that can be used throughout your Terraform configuration. Variables make your setup more flexible because their values can be set dynamically at runtime or passed in via the command line. It's like declaring a variable in a program, where you can set the value once and change it when needed.
 ```hcl
 variable "region" {
   description = "The region where resources will be created"
