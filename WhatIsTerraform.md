@@ -166,6 +166,7 @@ Now, let's explore the individual blocks.
   
    
 ## 5. Block Types in Terraform   
+  <br>
   
 ### (1) Provider Block 
 A Provider Block defines the configuration for the cloud environment or service that Terraform will use to manage resources.   
@@ -183,4 +184,20 @@ provider "azurerm" {
 > - The Provider Block typically includes settings like authentication details (API keys, credentials, etc.), region, and other provider-specific configurations.  
 > - Provider Initialization: You should run `terraform init` before terraform apply to initialize the provider and download the necessary plugins.
 > - `terraform init` command would be explained in next post.
+  <br> <br>
+   
+### (2) Resource Block  
+A Resource Block is used to define and manage infrastructure resources such as virtual machines, storage accounts, and networks.  
+```hcl
+resource "azurerm_storage_account" "example1" {
+  name                     = "mystorageaccount"
+  location                 = "East US"
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+}
+```
+
+- Block Type: `resource`
+- Resource Type: `azurerm_storage_account`
+- Resource Name: `example1`
 
