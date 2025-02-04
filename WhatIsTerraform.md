@@ -80,6 +80,7 @@ Additionally, HCL is **block-based**, making it easy to structure and organize i
 > - A **resource** block is like an individual LEGO piece that represents a cloud resource (e.g., a virtual machine, database, or storage account).  
 > - A **provider** block is like the foundation that connects Terraform to a specific cloud service (e.g., Azure, AWS).   
 
+  
 ### - Similarities with other programming languages  
 Despite its differences, HCL shares some common programming concepts, such as:  
 - **Conditional statements** (if-else logic)  
