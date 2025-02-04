@@ -65,7 +65,7 @@ With HCL, you can automatically provision Azure resources without using the UI. 
   
 (1) **Declarative**  
 While HCL is classified as a programming language, it differs from traditional languages like Python or Java.  
-The key distinction is that HCL is **declarative**. Instead of writing step-by-step instructions on *how* to create resources, you describe *what* the final infrastructure should look like.  
+The key distinction is this HCL is **declarative**. Instead of writing step-by-step instructions on *how* to create resources, you describe *what* the final infrastructure should look like.  
 Terraform then automatically manages resource states and applies necessary changes to match the desired configuration.   
 
 (2) **Block-Based**  
