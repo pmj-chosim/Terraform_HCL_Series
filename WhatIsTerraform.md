@@ -88,8 +88,10 @@ Despite its differences, HCL shares some common programming concepts, such as:
 - **Loops** (iteration over lists or maps)  
 - **Variables** for dynamic configuration  
 
+   
 These features make HCL flexible and reusable, helping developers efficiently manage infrastructure as code.  
 
+   
 
 ***
   
