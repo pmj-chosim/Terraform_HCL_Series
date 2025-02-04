@@ -58,7 +58,7 @@ You must understand **HCL (HashiCorp Configuration Language)**.
 
 HCL (HashiCorp Configuration Language) is the primary language of Terraform, allowing you to define and manage infrastructure using **declarative syntax**.  
 
-### Why use HCL?  
+### - Why use HCL?  
 With HCL, you can automatically provision Azure resources without using the UI. Instead of manually configuring each resource, you define the desired state in code, and Terraform ensures that the infrastructure matches your configuration.  
 
 ### - How is HCL different from other programming languages?  
