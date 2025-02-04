@@ -139,7 +139,7 @@ All blocks in Terraform follow a general pattern:
   
 #### - Example:
 ```hcl
-resource "azurerm_storage_account" "example" {
+resource "azurerm_storage_account" "storageaccount1" {
   name                     = "mystorageaccount"
   location                 = "East US"
   account_tier             = "Standard"
@@ -148,7 +148,7 @@ resource "azurerm_storage_account" "example" {
 ```
 > - Block Type: resource
 > - Resource Type: azurerm_storage_account
-> - Resource Name: example
+> - Resource Name: storageaccount1
 > - Attributes:
 > - name = "mystorageaccount" <br>
 >  location = "East US" <br>
