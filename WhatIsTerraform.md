@@ -1,6 +1,6 @@
 ## Hello!  
 # Have you ever heard of *Terraform*?  
-This post will introduce you to **Terraform**.  
+This post will introduce you to ***Terraform***.  
 
 ### *Have you ever experienced a situation where you forgot to delete a cloud resource, and as a result, you were charged a hefty fee?* 
 
