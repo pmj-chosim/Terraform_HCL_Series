@@ -155,7 +155,7 @@ resource "azurerm_storage_account" "storageaccount1" {
 >  account_tier = "Standard" <br>
 >  account_replication_type = "LRS"
 
-    <br>  <br>
+<br>  <br>
     
 ***
 There are various types of blocks in Terraform. 
