@@ -185,6 +185,7 @@ provider "azurerm" {
 > - Provider Initialization: You should run `terraform init` before terraform apply to initialize the provider and download the necessary plugins.
 > - `terraform init` command would be explained in next post.
   <br> <br>
+  
    
 ### (2) Resource Block  
 A Resource Block is used to define and manage infrastructure resources such as virtual machines, storage accounts, and networks.  
