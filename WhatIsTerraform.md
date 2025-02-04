@@ -256,15 +256,18 @@ module "network_us" {
  <br> <br>  
  
 ### (6) Output Block
-An Output Block is used to display information after Terraform completes the execution, such as resource IDs or IP addresses. It helps in exposing specific values that may be required for external systems or as input for other modules.
+An **Output Block** is used to display specific information after Terraform finishes running, such as resource IDs or IP addresses. It's similar to how a function returns a value—the output block allows you to pass specific values (like a resource's ID or IP address) that may be required for other modules or external systems.
 ```hcl
-output "storage_account_name" {
-  value = azurerm_storage_account.example.name
+output "vm_ip" {
+  value = azurerm_virtual_machine.example.private_ip
 }
 ```
 - Block Type: `output`
-- Resource Name: `storage_account_name`
+- Resource Name: `vm_ip`
 - Attributes: `value`
+
+***Explanation:
+> In this example, output `"vm_ip"` will display the IP address of the virtual machine after Terraform finishes its execution. This value can then be used by other modules or systems.
 
 
 
