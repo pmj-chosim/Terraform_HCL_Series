@@ -221,7 +221,7 @@ variable "region" {
  <br> <br> 
  
 ### (4) Data Block
-A **Data Block** is used to query data that already exists outside of your Terraform configuration. It can fetch existing resources (e.g., images, networks) and use them to configure new resources.
+A **Data Block** is used to fetch information about existing resources that were created outside of your Terraform configuration. For example, it can retrieve data about a virtual machine created 3 years ago or a VNet created yesterday. You can then use this data to configure new resources or reference these existing resources in your Terraform setup.
 ```hcl
 data "azurerm_virtual_network" "ex" {
   name                = "myvnet"
