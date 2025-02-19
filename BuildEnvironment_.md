@@ -1,5 +1,5 @@
 # Getting Started with Terraform Blocks: Building Azure Made Easy
-##
+## < Second Chapter: Setting Up the Environment >
 
 ***
   
