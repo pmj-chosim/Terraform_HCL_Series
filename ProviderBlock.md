@@ -31,12 +31,21 @@ Blocks in Terraform typically follow a general pattern:
 
 모든 블록이 저렇게 생긴 건 아니라고 했잖아. 프로바이더 블록이 저렇게 생기지 않았어.
 
-프로바이더 블록은 <Block Type> <Resource Name? Type?> 이렇게 생겼어.
-그리고 Block Type은 <provider>로 고정이고 resource name은 너가 사용할 csp에 해당하는 걸 적으면 돼.
-우리는 이 시리즈 내내 azure를 csp로 사용할 거잖아?
-그래서 우리는 이 포스트 끝까지 계속 resource name으로 azurerm을 쓸거야.
-그래서 에저에 인프라를 프로비저닝할거라면 <provider> <azurerm>을 꼭 사용해야해.
+The provider block follows the structure: `<Block Type> <Provider Type>`.  
 
+- The **Block Type** is always `provider`.  
+- The **Provider Type** specifies which cloud service provider (CSP) you are using.  
+
+Since we'll be using **Azure** as our CSP throughout this series, we'll consistently use `azurerm` as the provider type.  
+
+So, whenever you provision infrastructure on Azure using Terraform, you must use the following format:
+
+```terraform
+provider "azurerm" {
+  features {}
+}
+```
+그렇긴 한데.. 우리는 정보를 더 추가해서 계속 사용할 거야. 다음 형태로 사용할 거란 말이지. 
 
 ```hcl
 provider "azurerm"{
@@ -46,9 +55,128 @@ provider "azurerm"{
   tenant_id       = "11111111-1111-1111-1111-111111111111"
 }
 ```
-이런식으로 provider 블록을 작성해서 사용해.
+지금, 새로 추가된 게 있지?
 
 - The `features` block is required but can be left empty. It is used to enable specific features in the Azure provider.
 - The `subscription_id` is the unique identifier for your Azure subscription. This is mandatory unless you're using other authentication methods that automatically retrieve it.
 - The `tenant_id` refers to your Azure Active Directory (AAD) tenant. This is optional in some cases, but if you have multiple tenants, specifying it ensures the correct one is used.
+
+우리는 subcription_id 정보를 추가적으로 넣어서 매번 사용할거야.
+subcription_id에 뭐 적어야 하는지는 조금 있다가 같이 살펴보자.
+
+
+3. 세 번째로는 visual studio code에서 terraform을 사용할 수 있게 환경을 만드는 거야!
+어렵진 않고, 폴더랑 파일을 만들어 볼거야.
+
+visual studio code를 열고, 너가 작업하고 싶은 폴더를 만들어. 이름은 상관없어. 그 다음 폴더 안에 main.tf라는 파일을 만들어 보자.
+> main.tf는 ~~~다.
+
+terraform을 사용하려면, 꼭 필수적으로 작성해야 하는 코드가 있거든?
+terrafom의 버전을 명시해서 우째저쨰 하겠다는 코드야.
+
+```hcl
+terraform{
+    required_version=">=1.0.0"
+    required_providers{
+        local={
+            source="hashicorp/local"
+            version=">= 2.0.0"
+        }
+    }
+}
+```
+요런 코드지.
+> `requried_version`은 ~~다
+> `required_providers`는 ~다
+>  `required_providers` 안에는 사용할 프로바이더가 명시가 되어야 해.
+
+저 코드는 로컬 컴퓨터에 리소스를 프로비전하겠다는 코드야. 그런데 우리는 azure에 프로비전할 거잖아?
+
+그래서 우리는
+```hcl
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=4.1.0"
+    }
+  }
+}
+```
+요 코드를 `main.tf`에 써줘야해.  
+  
+여기서 `4.1.0`은 azure~~의 버전이야. 내가 블로그를 가능하면 업데이트하려 노력하겠지만, 버전 오류가 혹시 발생한다면
+[Terraform Guide](https://registry.tf-registry-prod-use1.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
+여기서 지원 버전이 뭔지 확인한 다음, 해당 버전으로 작성하면 돼.
+  
+
+4. 이제 azure를 프로비전 해볼까?
+ 먼저  아까 1~3번 내용에서 다뤘던 거를 정리해 보자!
+terraform으로 azure에 프로비전 하기 위해서는 필수적인 게 2가지 있다.
+그것은 바로
+```hcl
+# 첫 번째로 필수적인 것.
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=4.1.0"
+    }
+  }
+}
+
+# 두 번째로 필수적인 것
+provider "azurerm"{
+  features {}
+
+  subscription_id = "00000000-0000-0000-0000-000000000000"
+}
+```
+요 블록을 써주는 거야.
+이걸 vscode에서 main.tf에 적어줘.
+
+그 다음, 내 subscription_id로 내용을 바꿔줘.
+
+[Azure Portal](https://portal.azure.com/)에 접속해 로그인하고, 맨 위에 있는 배너를 살펴 봐바. copliot 버튼 옆에 있는 버튼있지? cloud shell 버튼을 눌러봐.
+![image](https://github.com/user-attachments/assets/9aa8976b-1889-41b3-b453-fb0eb3ea4604)  
+그 다음 조금 기다리면, 다음과 유사한 화면이 보일거야.
+  
+  ![image](https://github.com/user-attachments/assets/af521d6e-49d9-4c68-b098-71d3a02783b5)
+
+여기에 명령어를 하나 입력하자.  
+```bash
+az account show --output table
+```
+입력하면 구독 정보들을 확인할 수 있어.
+
+![image](https://github.com/user-attachments/assets/b8e33778-82a5-4edc-a077-28a83db5f499)  
+
+너가 사용할 구독의 id를 복사하면 돼. 복사해서 아까 main.tf의 provider의 subscription_id 부분에 붙여 넣어 주면 된다.
+
+![image](https://github.com/user-attachments/assets/4b46ae3a-8088-42ec-b4c3-d73667782607)  
+
+이런식으로 너가 잘 했을 것 같아.  
+
+그러면 이제 이거를 실행해보자.  
+
+
+5. terraform 명령어들???
+
+terraform init
+terraform plan
+terraform apply 설명
+
+
+그리고 visual studio code의 터미널을 열고, 터미널 경로가 main.tf가 속한 폴더 경로인지 확인해줘. main.tf가 속한 폴더 경로가 아니라면
+해당 경로로 이동해줘. 
+![image](https://github.com/user-attachments/assets/7082cb9c-f316-45c8-a2b8-5fc2e09a6247)
+
+거기서 terraform init을 가장 먼저 해주면 돼.  
+![image](https://github.com/user-attachments/assets/b944fdab-6a77-48fb-ad51-565f7eb0faca)  
+위 사진처럼 새로운 게 생길거야.
+>.terraform은 ~다
+>.terraform.lock.hcl은 뭐뭐다
+
+
+
 
