@@ -307,7 +307,8 @@ output "vm_ip" {
 <br> <br>
 
 
-There are many more block types, but in this series, we'll dive deep into these six blocks. In the next post, we'll first focus on installing Terraform and setting up the environment, and then in the following posts, we'll explore each of these blocks in detail.
+There are many more block types, but in this series, we'll dive deep into these six blocks.   
+In the next post, we'll first focus on installing Terraform and setting up the environment, and then in the following posts, we'll explore each of these blocks in detail.
 
 Thank you for reading through the post! See you in the next one~
 
