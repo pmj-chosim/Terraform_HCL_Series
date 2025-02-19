@@ -1,3 +1,8 @@
+# Getting Started with Terraform Blocks: Building Azure Made Easy
+##
+
+***
+  
 ### Hello Everyone! 
 ### I'm really glad to see you again 😁
 ## Today, we will set up the environment for using Terraform.
