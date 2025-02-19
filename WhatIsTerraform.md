@@ -1,5 +1,5 @@
 # Getting Started with Terraform Blocks: Building Azure Made Easy
-# **Fist Chapter: What is Terraform?**
+## First Chapter: What is Terraform?
 <br>
 
 ## Hello!  
