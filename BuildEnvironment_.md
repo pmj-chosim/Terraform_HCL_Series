@@ -18,6 +18,8 @@ Let’s start with the download. Follow the guide that matches your operating sy
 [Linux Terraform Installation Guide](#Linux)  
 [macOS Terraform Installation Guide](#macOS)  
 
+<br>
+ 
 ***
 
 ## Windows
