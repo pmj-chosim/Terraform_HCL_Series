@@ -2,7 +2,7 @@
 ## < First Chapter: What is Terraform? >
 
 ***
-
+  
 
 ## Hello!  
 # Have you ever heard of *Terraform*?  
