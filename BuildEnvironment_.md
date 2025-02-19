@@ -132,7 +132,7 @@ Just type the following command:
 terraform --version
 ```
 
-If you see an output like `Terraform v1.*~.#@`, congratulations! Your installation was successful. 🎉  
+If you see an output like `Terraform x.x.x`, congratulations! Your installation was successful. 🎉  
 
 <br>
 
