@@ -46,7 +46,7 @@ Let’s dive into Terraform and explore the topics step by step.
 
 ***Terraform*** is a tool that helps you set up and manage your servers, networks, and other resources using code, instead of clicking through a user interface. Imagine writing a recipe for your infrastructure—when you run the code, ***Terraform*** automatically follows it to create, update, or remove the resources you need.
 
-With ***Terraform***, you can manage resources across different cloud platforms like AWS, Azure, or Google Cloud, all with the same code. This makes it easier to handle everything consistently, no matter where your resources are hosted.
+With ***Terraform***, you can manage resources across different cloud platforms like AWS, Azure, or Google Cloud Platform, all with the same code. This makes it easier to handle everything consistently, no matter where your resources are hosted.
 
 Because your infrastructure is written as code, you can save it, share it, and keep track of changes. This makes it more reliable and much easier to manage in the long run.
 
