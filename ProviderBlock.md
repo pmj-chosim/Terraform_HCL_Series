@@ -178,5 +178,27 @@ terraform apply 설명
 >.terraform.lock.hcl은 뭐뭐다
 
 
+그 다음 terraform plan을 해보자.
+![image](https://github.com/user-attachments/assets/a37bca3b-6b4d-4d3c-a6eb-a1be3c66da3f)
 
+이런식으로 뜨면 잘 수행되고 있는 거야.
+no changes로 뜨지? 이거는 우리가 아직 아무 것도 프로비전하지 않아서야.
 
+그 다음 terraform apply를 해보자.
+![image](https://github.com/user-attachments/assets/b15d87cd-9dd2-44ed-a0f5-8f887d96ab74)
+
+Apply complete가 뜨면 성공이야! 
+근데 프로비저닝된 게 없어서 잘 됐는지 나는 잘 와닿지 않더라고.
+그래서 우리 리소스 그룹을 하나 프로비저닝 해보면서
+잘 됐는지 가시적으로 확인해보자!
+
+```hcl
+resource "azurerm_resource_group" "example" {
+  name     = "example-2"
+  location = "West Europe"
+}
+```
+main.tf에 이 코드를 추가해줘.
+![image](https://github.com/user-attachments/assets/17673283-78c7-4b7a-874c-256eb75e8e91)  
+
+저장을 한 다음, 다시 터미널에 `terraform plan`을 입력해보자.
