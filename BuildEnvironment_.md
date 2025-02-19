@@ -14,10 +14,11 @@ First, you'll need to download Terraform according to your operating system. The
   
 Let’s start with the download. Follow the guide that matches your operating system.  
 
-[Windows Terraform Installation Guide](#Windows)
-[Linux Terraform Installation Guide](#Linux)
-[macOS Terraform Installation Guide](#macOS)
+[Windows Terraform Installation Guide](#Windows)  
+[Linux Terraform Installation Guide](#Linux)  
+[macOS Terraform Installation Guide](#macOS)  
 
+***
 
 ## Windows
 
