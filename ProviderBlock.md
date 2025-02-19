@@ -202,3 +202,29 @@ main.tf에 이 코드를 추가해줘.
 ![image](https://github.com/user-attachments/assets/17673283-78c7-4b7a-874c-256eb75e8e91)  
 
 저장을 한 다음, 다시 터미널에 `terraform plan`을 입력해보자.
+![image](https://github.com/user-attachments/assets/4b569e6f-bd58-4eb9-9519-a5c6ce8c8c04)  
+
+이대로 만들어도 문제 없다 하니,
+`terraform aplly`를 적용해 만들어 보자.  
+![image](https://github.com/user-attachments/assets/41c91879-8423-4e66-824d-c8363963529b)  
+
+yes를 입력해주고  
+![image](https://github.com/user-attachments/assets/79b31cfc-4ae4-4ec6-8e4f-8cdc2f51554d)  
+기다리면, 생성이 될거야.  
+azure portal에서도 만들어 졌는지 확인해 보자.  
+![image](https://github.com/user-attachments/assets/490888d8-e1e8-4267-a01f-a957da9ecad7)  
+azure portal에서 resource groups을 클릭해봐.
+
+
+![image](https://github.com/user-attachments/assets/002414a9-07a9-4b57-ba9f-203dbd494ac3)  
+
+example-2가 잘 생성돼 있네!!
+
+축하해!!!
+
+Azure에 프로비전을 완료했어!!
+
+***
+다음 포스트에서는  ~~를 알아보자.
+다음 포스트에서 꼭 다시 만나 ~~
+
