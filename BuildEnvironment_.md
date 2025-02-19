@@ -24,13 +24,13 @@ Let’s start with the download. Follow the guide that matches your operating sy
 
 ## Windows
 
-#### 1. Terraform Download
+#### [1] Terraform Download
 
 You can download the Terraform installation file from HashiCorp's official website.  
 
 🔗 [Terraform Download Page](https://developer.hashicorp.com/terraform/install)
 
-#### Download Instructions
+#### [2] Installation Instructions
 
 1. Click the link above to go to the download page.  
 
