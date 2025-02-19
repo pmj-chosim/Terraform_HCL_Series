@@ -2,6 +2,8 @@
 
 운영체제에 알맞게 설치를 해라. Windows와 Linux, macOS에 설치하는 방법을 제공한다.
 
+<br>
+
 ## Windows
 
 #### 1. Terraform 다운로드
@@ -22,6 +24,7 @@ Terraform 설치 파일은 HashiCorp 공식 사이트에서 다운로드할 수 
 1. 다운로드된 ZIP 파일을 확인합니다.
 
 
+<br>
 
 ## Linux  
   
@@ -60,7 +63,7 @@ sudo yum -y install terraform
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 ```
-
+<br>
 
 
 ## macOS
