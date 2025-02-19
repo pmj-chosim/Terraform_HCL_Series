@@ -1,3 +1,6 @@
+# Getting Started with Terraform Blocks: Building Azure Made Easy
+<br>
+
 ## Hello!  
 # Have you ever heard of *Terraform*?  
 This post will introduce you to ***Terraform***.  
