@@ -114,8 +114,8 @@ brew install hashicorp/tap/terraform
 ```
 
 ***
-
-You did great! 
+<br>
+You did great!   
 Now, let’s verify if the installation was successful by running a simple command.  
 
 For `Windows`, you can run the command in `cmd` or `PowerShell`.   
@@ -126,3 +126,13 @@ Just type the following command:
 ```bash
 terraform --version
 ```
+
+If you see an output like `Terraform v1.*~.#@`, congratulations! Your installation was successful. 🎉  
+
+<br>
+
+***
+   
+In the next post, we’ll dive into the provider block. We'll use it to create a resource group in Azure with Terraform.   
+
+See you in the next post! 👋   
