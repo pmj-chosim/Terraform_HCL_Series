@@ -23,8 +23,13 @@ Terraform 설치 파일은 HashiCorp 공식 사이트에서 다운로드할 수 
 
 
 
-## Linux
-
-
+## Linux  
+  
+#### Ubuntu/Debian Linux  
+```hcl
+wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+```
 
    
