@@ -112,3 +112,17 @@ You can easily download Terraform using a package manager. Copy the command and 
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 ```
+
+***
+
+You did great! 
+Now, let’s verify if the installation was successful by running a simple command.  
+
+For `Windows`, you can run the command in `cmd` or `PowerShell`.   
+For Linux, use the `bash shell` which is default in Linux.  
+Similarly for `macOS`, run the command in your terminal.  
+  
+Just type the following command:  
+```bash
+terraform --version
+```
