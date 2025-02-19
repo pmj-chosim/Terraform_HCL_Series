@@ -66,7 +66,7 @@ You can download the Terraform installation file from HashiCorp's official websi
 
 ## Linux  
   
-패키지 매니저를 사용해 쉽게 다운 받을 수 있다. 사용 중인 Linux 배포판에 맞는 명령어를 복사하여 Terraform을 설치하세요.
+You can easily install Terraform using a package manager. Just copy the command for your specific Linux distribution to get started.
   
 #### - Ubuntu/Debian
 ```hcl
@@ -106,7 +106,7 @@ brew install hashicorp/tap/terraform
 
 ## macOS
 
-패키지 매니저를 사용해 쉽게 다운 받을 수 있다. 명령어를 복사하여 Terraform을 설치하세요.
+You can easily download Terraform using a package manager. Copy the command and install Terraform. 
 
 ```hcl
 brew tap hashicorp/tap
