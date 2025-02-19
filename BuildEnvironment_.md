@@ -1,9 +1,10 @@
-### 안녕하세요 여러분!
-## 이번 시간에는 Terraform을 사용하기 위한 환경을 구축할 것입니다.
+### Hello Everyone! 
+### I'm really glad to see you again 😁
+## Today, we will set up the environment for using Terraform.
 
-지난 시간에는 Terraform이 무엇이고, 이 시리즈가 무엇인지 
-
-운영체제에 알맞게 설치를 해라. Windows와 Linux, macOS에 설치하는 방법을 제공한다.
+Last time, we covered "what Terraform is" and "what this series is about".  
+  
+In this post, we will focus on how to install Terraform on your operating system. Installation methods for `Windows`, `Linux`, and `macOS` will be provided.
 
 <br>
 
