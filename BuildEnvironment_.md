@@ -4,13 +4,24 @@
 
 Last time, we covered "what Terraform is" and "what this series is about".  
   
-In this post, we will focus on how to install Terraform on your operating system. Installation methods for `Windows`, `Linux`, and `macOS` will be provided.
+In this post, we’ll focus on installing Terraform on your operating system, with installation methods provided for `Windows`, `Linux`, and `macOS`.
 
+***
 <br>
+
+The process of setting up the Terraform environment can be divided into two main steps.  
+First, you'll need to download Terraform according to your operating system. Then, we’ll verify that Terraform has been downloaded correctly.  
+  
+Let’s start with the download. Follow the guide that matches your operating system.  
+
+[Windows Terraform Installation Guide](#Windows)
+[Linux Terraform Installation Guide](#Linux)
+[macOS Terraform Installation Guide](#macOS)
+
 
 ## Windows
 
-#### 1. Terraform 다운로드
+#### 1. Terraform Download
 
 Terraform 설치 파일은 HashiCorp 공식 사이트에서 다운로드할 수 있습니다.
 
