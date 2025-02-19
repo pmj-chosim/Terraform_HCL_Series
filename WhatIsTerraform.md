@@ -34,7 +34,7 @@ Here’s the table of contents for this post.
 
 <br> <br>    
 As you can see from the table of contents,
-### This post covers the essential things you need to know in order to 
+### This post and series covers the essential things you need to know in order to 
 ### use ***Terraform*** to provision services on Azure.    
 
 <br> <br>
